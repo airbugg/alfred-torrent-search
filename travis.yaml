@@ -1,4 +1,7 @@
 language: node_js
 node_js:
   - '10'
-  - '8'
+deploy:
+  provider: npm
+  email: 'YOUR_EMAIL_ADDRESS'
+  api_key: 'YOUR_AUTH_TOKEN'
