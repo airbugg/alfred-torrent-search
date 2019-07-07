@@ -1,0 +1,42 @@
+{
+  "name": "alfred-torrent-search",
+  "version": "0.0.0",
+  "description": "Alfred workflow interface `torrent-search-api`",
+  "license": "MIT",
+  "repository": "airbugg/alfred-torrent-search",
+  "author": {
+    "name": "Eugene Lerman",
+    "email": "eugenel@wix.com",
+    "url": "https://github.com/airbugg/alfred-torrent-search"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
+  },
+  "files": [
+    "index.js",
+    "icon.png",
+    "info.plist"
+  ],
+  "keywords": [
+    "alfred",
+    "workflow",
+    "alfy"
+  ],
+  "quokka": {
+    "babel": true,
+    "node": "~/.config/fnm/bin/node"
+  },
+  "dependencies": {
+    "alfy": "^0.9.0",
+    "date-fns": "^2.0.0-beta.2",
+    "ramda": "^0.26.1",
+    "torrent-search-api": "^2.0.9"
+  },
+  "devDependencies": {
+    "xo": "^0.17.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "generator-alfred": {
+    "promptValues": {
+      "githubUsername": "airbugg",
+      "website": "http://github.com/airbugg/alfred-torrent-search"
+    }
+  }
+}
