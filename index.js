@@ -18,7 +18,7 @@ const parseUploadDate = date =>
 		: date
 
 const formatSubtitle = ({ provider, size, time, seeds, peers }) =>
-	`[${provider}] ${size} | Uploaded: ${parseUploadDate(time)} | SE: ${seeds} | LE: ${peers}`
+	`[${provider}] ${size} | ⏳: ${parseUploadDate(time)} | ⏫: ${seeds} | ⏬: ${peers}`
 
 const formatTitle = ({ title }) => title
 
@@ -36,7 +36,7 @@ const memoizedSearch = searchFn => async query => {
 const showResults = results => alfy.output(results)
 
 const searchTorrents = memoizedSearch(async query =>
-	torrentSearch.search(query, 'All', 25).then(results =>
+	torrentSearch.search(query, 'All', 50).then(results =>
 		sortBySeedsAndPeers(results).map(torrent => ({
 			title: formatTitle(torrent),
 			subtitle: formatSubtitle(torrent),
