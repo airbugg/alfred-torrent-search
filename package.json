@@ -1,6 +1,6 @@
 {
   "name": "alfred-torrent-search",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Alfred workflow interface `torrent-search-api`",
   "license": "MIT",
   "repository": "airbugg/alfred-torrent-search",
